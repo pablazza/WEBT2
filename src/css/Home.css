@@ -1,0 +1,58 @@
+/* Home.css */
+
+.Home {
+    width: 100%;
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Home-header {
+    margin-bottom: 20px;
+  }
+  
+  .Home-header h1 {
+    font-size: 2rem; /* Tamaño del título */
+    color: #333; /* Color del texto */
+  }
+  
+  .Home-header p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+  }
+  
+  .Home-section {
+    margin: 10px 0; /* Espaciado entre secciones */
+    
+  }
+  
+  .Home-section h2 {
+    font-size: 1.5rem; /* Tamaño del subtítulo */
+    color: #007bff; /* Color del enlace */
+  }
+  
+  .Home-section h2 a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+  }
+  
+  .Home-image-container {
+    display: flex;
+    justify-content: center; /* Centrar imagen horizontalmente */
+    align-items: center; /* Centrar imagen verticalmente */
+    margin-top: 10px; /* Espaciado superior */
+    width: 200px; /* Ancho fijo para el contenedor */
+    height: 200px; /* Alto fijo para el contenedor */
+    border-radius: 50%; /* Hace que el contenedor sea redondo */
+    border: 2px solid #007bff; /* Borde opcional */
+    margin-left: auto; /* Centrando horizontalmente */
+    margin-right: auto; /* Centrando horizontalmente */
+    overflow: hidden; /* Ocultar parte de la imagen que sobresale */
+}
+
+.Home-image-container img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+}

@@ -1,0 +1,28 @@
+.Wcag {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .Wcag h2 {
+    color: #333;
+  }
+  
+  .Wcag p {
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .image-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }

@@ -1,0 +1,40 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App-header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .App-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .App-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .App-nav a:hover {
+    background-color: #555;
+  }
+  
+  .App-content {
+    padding: 2rem;
+  }
+  
+  .Section {
+    margin-bottom: 2rem;
+  }
+  
