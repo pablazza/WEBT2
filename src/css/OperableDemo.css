@@ -1,0 +1,41 @@
+.Operable {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .Operable h2 {
+    color: #333;
+  }
+  
+  .Operable p {
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .Operable ul {
+    margin-top: 1rem;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .Operable button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Operable button:hover,
+  .Operable button:focus {
+    background-color: #0056b3; /* Cambio de color al hacer hover o foco */
+  }
+  
+  .interactive-demo {
+    margin-top: 1rem;
+  }

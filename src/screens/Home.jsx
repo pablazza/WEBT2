@@ -7,7 +7,6 @@ import SenadisImg from '../assets/senadis.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../css/Home.css';
-import Accessibility from './AccessibilityMenu.jsx';
 
 const Home = () => {
   const sectionData = [
@@ -28,7 +27,6 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <Accessibility />
       <div className="Home-header">
         <h1>Bienvenido a la página de Información</h1>
         <p>Seleccione una de las opciones del menú para mayor información</p>

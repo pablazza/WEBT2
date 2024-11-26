@@ -1,0 +1,60 @@
+.Perceptible {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.Perceptible h2 {
+  color: #333;
+}
+
+.Perceptible h3 {
+  color: #333;
+}
+
+.Perceptible p {
+  line-height: 1.5;
+  color: #555;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.image-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Aumenta ligeramente la imagen al pasar el mouse */
+}
+
+.alt-text {
+  margin-top: 0.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos para alto contraste */
+.high-contrast {
+  background-color: #000; /* Fondo negro para alto contraste */
+  color: #fff; /* Texto blanco para alto contraste */
+}
+
+.high-contrast button {
+  background-color: #fff; /* Botón blanco */
+  color: #000; /* Texto negro en el botón */
+  border: 1px solid #000; /* Borde negro */
+}
+
+.high-contrast button:hover {
+  background-color: #ddd; /* Efecto hover para el botón */
+}
