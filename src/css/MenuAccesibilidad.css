@@ -1,0 +1,57 @@
+.menu-accesibilidad {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+.menu-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-items {
+    margin-top: 10px;
+}
+
+.menu-items h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.menu-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-items li {
+    margin: 8px 0;
+}
+
+.menu-items button, .menu-items a {
+    background-color: #f8f9fa;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.high-contrast {
+    background-color: black;
+    color: white;
+}

@@ -6,11 +6,13 @@ import Wcag from "./screens/WCAG";
 import Senadis from "./screens/SENADIS";
 import Info from "./screens/Info";
 import Contact from "./screens/Contact";
+import AccessibilityMenu from "./components/MenuAccesibilidad";
 import './css/App.css';
 
 function App() {
   return (
-    <div className="App">
+    <AccessibilityMenu>
+      <div className="App">
       <Router>
         <NavBar />
         <Routes>
@@ -24,6 +26,7 @@ function App() {
         </Routes>
       </Router>
     </div>
+    </AccessibilityMenu>
   );
 }
 

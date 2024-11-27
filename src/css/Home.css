@@ -13,12 +13,12 @@
   }
   
   .Home-header h1 {
-    font-size: 2rem; /* Tamaño del título */
+    font-size: inherit; /* Tamaño del título */
     color: #333; /* Color del texto */
   }
   
   .Home-header p {
-    font-size: 1.2rem; /* Tamaño del texto */
+    font-size: inherit; /* Tamaño del texto */
     color: #666; /* Color del texto */
   }
   
@@ -28,7 +28,7 @@
   }
   
   .Home-section h2 {
-    font-size: 1.5rem; /* Tamaño del subtítulo */
+    font-size: inherit; /* Tamaño del subtítulo */
     color: #007bff; /* Color del enlace */
   }
   
