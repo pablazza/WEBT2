@@ -1,43 +1,35 @@
 .Senadis {
-  background-color: #f4f4f4;
-  padding: 2rem;
-  border-radius: 8px;
+  background-color: #fdfffc; /* Off White */
+  color: #011627; /* Dark Blue */
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.Senadis h2 {
-  color: #333;
+.Senadis h1 {
+  font-size: 2.5em;
 }
 
 .Senadis p {
-  line-height: 1.5;
-  color: #555;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+  font-size: 1.1em;
 }
 
 .image-container img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #2ec4b6; /* Teal border */
 }
 
-.senadis-link {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+/* Estilos para alto contraste */
+.high-contrast {
+  background-color: #011627; /* Dark Blue */
+  color: #fdfffc; /* Off White */
 }
 
-.senadis-link:hover {
-  background-color: #0056b3; /* Cambio de color al pasar el mouse */
+.high-contrast h1, 
+.high-contrast p {
+  color: #fdfffc; /* Off White */
+}
+
+.high-contrast img {
+  border: 2px solid #2ec4b6; /* Teal border */
 }

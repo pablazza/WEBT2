@@ -1,53 +1,79 @@
 .Robusto {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-  }
-  
-  .Robusto h2 {
-    color: #333;
-  }
-  
-  .Robusto p {
-    line-height: 1.5;
-    color: #555;
-  }
-  
-  .Robusto ul {
-    margin-top: 1rem;
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .html-validator {
-    margin-top: 1rem;
-  }
-  
-  .html-validator textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none;
-  }
-  
-  .html-validator button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .html-validator button:hover {
-    background-color: #0056b3;
-  }
-  
-  .validation-message {
-    margin-top: 0.5rem;
-    font-weight: bold;
-  }
+  background-color: #fdfffc; /* Blanco */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.Robusto h2 {
+  color: #011627; /* Azul oscuro */
+}
+
+.Robusto p {
+  line-height: 1.5;
+  color: #2ec4b6; /* Turquesa */
+}
+
+.Robusto ul {
+  margin-top: 1rem;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.html-validator {
+  margin-top: 1rem;
+}
+
+.html-validator textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #2ec4b6; /* Turquesa */
+  border-radius: 4px;
+  resize: none;
+}
+
+.html-validator button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff9f1c; /* Naranja */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.html-validator button:hover {
+  background-color: #e71d36; /* Rojo */
+}
+
+.validation-message {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #e71d36; /* Rojo */
+}
+
+/* Estilos para alto contraste */
+.high-contrast {
+  background-color: #011627; /* Azul oscuro */
+  color: #fdfffc; /* Blanco */
+}
+
+.high-contrast h2, 
+.high-contrast p, 
+.high-contrast ul {
+  color: #fdfffc; /* Blanco */
+}
+
+.high-contrast button {
+  background-color: #ff9f1c; /* Naranja */
+  color: #011627; /* Azul oscuro */
+}
+
+.high-contrast button:hover {
+  background-color: #e71d36; /* Rojo */
+}
+
+.high-contrast textarea {
+  border: 1px solid #fdfffc; /* Blanco */
+}

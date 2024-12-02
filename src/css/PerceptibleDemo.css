@@ -1,21 +1,17 @@
 .Perceptible {
-  background-color: #f9f9f9;
+  background-color: #fdfffc; /* Blanco */
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 2rem;
 }
 
-.Perceptible h2 {
-  color: #333;
-}
-
-.Perceptible h3 {
-  color: #333;
+.Perceptible h2, .Perceptible h3 {
+  color: #011627; /* Azul oscuro */
 }
 
 .Perceptible p {
   line-height: 1.5;
-  color: #555;
+  color: #2ec4b6; /* Turquesa */
 }
 
 .image-container {
@@ -34,27 +30,48 @@
 }
 
 .image-container img:hover {
-  transform: scale(1.05); /* Aumenta ligeramente la imagen al pasar el mouse */
+  transform: scale(1.05);
 }
 
 .alt-text {
   margin-top: 0.5rem;
-  color: #333;
+  color: #011627; /* Azul oscuro */
   font-weight: bold;
 }
 
 /* Estilos para alto contraste */
 .high-contrast {
-  background-color: #000; /* Fondo negro para alto contraste */
-  color: #fff; /* Texto blanco para alto contraste */
+  background-color: #011627; /* Azul oscuro */
+  color: #fdfffc; /* Blanco */
+}
+
+.high-contrast h2, 
+.high-contrast h3, 
+.high-contrast p, 
+.high-contrast .alt-text {
+  color: #fdfffc; /* Blanco */
 }
 
 .high-contrast button {
-  background-color: #fff; /* Botón blanco */
-  color: #000; /* Texto negro en el botón */
-  border: 1px solid #000; /* Borde negro */
+  background-color: #ff9f1c; /* Naranja */
+  color: #011627; /* Azul oscuro */
 }
 
 .high-contrast button:hover {
-  background-color: #ddd; /* Efecto hover para el botón */
+  background-color: #2ec4b6; /* Turquesa */
+}
+
+/* Agregar un estilo para el botón normal */
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #007bff; /* Color de fondo del botón normal */
+  color: white; /* Color de texto del botón normal */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Color del botón normal al pasar el ratón */
 }

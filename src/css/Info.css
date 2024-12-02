@@ -1,79 +1,99 @@
 .info-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-  
-  .info-title {
-    text-align: center;
-    font-size: inherit;
-    margin-bottom: 30px;
-  }
-  
-  .info-content {
-    font-size: inherit;
-    line-height: 1.6;
-  }
-  
-  .tech-title {
-    text-align: center;
-    font-size: inherit;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  
-  .tech-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 20px;
-  }
-  
-  .tech-item {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 20px;
-    width: 100%;
-    max-width: 700px;
-  }
-  
-  .img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid #000000;
-    overflow: hidden;
-    margin-right: 20px;
-    flex-shrink: 0;
-  }
-  
-  .img-container img {
-    width: 100%;
-    height: 100%;
-    background-color: #4f4c4c;
-    object-fit: cover;
-  }
-  
-  .tech-info {
-    flex-grow: 1;
-  }
-  
-  .tech-name {
-    color: white;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .tech-description {
-    color: white;
-    font-size: inherit;
-    text-align: left;
-  }
+  max-width: 800px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 40px 20px; /* Espaciado interno */
+  background-color: #fdfffc; /* Off White */
+  color: #011627; /* Dark Blue */
+  font-family: Arial, sans-serif;
+}
+
+.info-title {
+  text-align: center; /* Centrar título */
+  font-size: 2.5em; /* Tamaño del título */
+  margin-bottom: 30px; /* Espacio inferior */
+}
+
+.info-content {
+  font-size: 1.1em; /* Tamaño del contenido */
+  line-height: 1.6; /* Altura de línea */
+}
+
+.tech-title {
+  text-align: center; /* Centrar título de tecnología */
+  font-size: 1.5em; /* Tamaño del título */
+  margin-top: 40px; /* Espacio superior */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.tech-container {
+  display: flex; /* Usar flexbox */
+  justify-content: center; /* Centrar contenido */
+  align-items: center; /* Alinear verticalmente */
+  flex-wrap: wrap; /* Permitir que se envuelvan los elementos */
+  gap: 40px; /* Espaciado entre elementos */
+  padding: 20px; /* Espaciado interno */
+}
+
+.tech-item {
+  display: flex; /* Usar flexbox */
+  align-items: center; /* Alinear verticalmente */
+  background-color: #333; /* Fondo oscuro */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Ocultar contenido que sobresalga */
+  padding: 20px; /* Espaciado interno */
+  width: 100%; /* Ancho completo */
+  max-width: 700px; /* Ancho máximo */
+}
+
+.img-container {
+  display: flex; /* Usar flexbox */
+  justify-content: center; /* Centrar imagen */
+  align-items: center; /* Alinear verticalmente */
+  width: 80px; /* Ancho del contenedor de imagen */
+  height: 80px; /* Altura del contenedor de imagen */
+  border-radius: 50%; /* Bordes redondeados */
+  border: 2px solid #000000; /* Borde negro */
+  overflow: hidden; /* Ocultar contenido que sobresalga */
+  margin-right: 20px; /* Espacio a la derecha */
+  flex-shrink: 0; /* Evitar que se reduzca */
+}
+
+.img-container img {
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
+  background-color: #4f4c4c; /* Fondo gris */
+  object-fit: cover; /* Ajustar imagen */
+}
+
+.tech-info {
+  flex-grow: 1; /* Permitir que el contenedor crezca */
+}
+
+.tech-name {
+  color: white; /* Color del nombre */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.tech-description {
+  color: white; /* Color de la descripción */
+  font-size: inherit; /* Heredar tamaño de fuente */
+  text-align: left; /* Alinear a la izquierda */
+}
+
+/* Estilos para alto contraste */
+.high-contrast {
+  background-color: #011627; /* Dark Blue */
+  color: #fdfffc; /* Off White */
+}
+
+.high-contrast .info-title,
+.high-contrast .tech-title,
+.high-contrast .tech-name,
+.high-contrast .tech-description {
+  color: #fdfffc; /* Off White */
+}
+
+.high-contrast .tech-item {
+  background-color: #222; /* Fondo más oscuro para alto contraste */
+}

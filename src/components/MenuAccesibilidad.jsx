@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext } from 'react';
+import React, { useState, createContext, useContext, useRef } from 'react';
 import '../css/MenuAccesibilidad.css';
 
 // Crear contexto
@@ -21,10 +21,19 @@ const MenuAccesibilidad = ({ children }) => {
 
     const toggleContrast = () => {
         setIsHighContrast((prev) => !prev); // Cambiar el estado de contraste
+        document.body.classList.toggle('high-contrast'); // Cambiar clase del body
     };
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const readContent = () => {
+        const content = document.body; // O un contenedor específico
+        const textElements = content.querySelectorAll('h1, h2, h3, h4, p');
+        const texts = Array.from(textElements).map(el => el.innerText).join(' ');
+        const utterance = new SpeechSynthesisUtterance(texts);
+        window.speechSynthesis.speak(utterance);
     };
 
     return (
@@ -32,16 +41,14 @@ const MenuAccesibilidad = ({ children }) => {
             <div style={{
                 fontSize: fontSizes[fontSizeIndex], // Aplicar tamaño de fuente al contenedor principal
                 transition: 'font-size 0.3s ease',
-                backgroundColor: isHighContrast ? '#000' : '#fff', // Cambiar fondo según contraste
-                color: isHighContrast ? '#fff' : '#000', // Cambiar texto según contraste
             }}>
-                <div className={`menu-accesibilidad ${isOpen ? 'open' : 'closed'}`} style={{ fontSize: '16px' }}> {/* Tamaño de fuente fijo para el menú */}
+                <div className={`menu-accesibilidad ${isOpen ? 'open' : 'closed'}`} style={{ fontSize: '16px' }}>
                     <button onClick={toggleMenu} className="menu-toggle" aria-expanded={isOpen}>
                         {isOpen ? 'Cerrar Menú' : 'Abrir Menú'}
                     </button>
                     {isOpen && (
                         <div className="menu-items">
-                            <h2>Menú Accesibilidad</h2>
+                            <div style={{ fontStyle : 'bold'}}>Menú Accesibilidad</div>
                             <ul>
                                 <li>
                                     <button onClick={toggleFontSize}>Cambiar Tamaño de Fuente</button>
@@ -51,8 +58,14 @@ const MenuAccesibilidad = ({ children }) => {
                                         {isHighContrast ? 'Desactivar Contraste Alto' : 'Activar Contraste Alto'}
                                     </button>
                                 </li>
-                                <li><button onClick>Lector de Texto</button></li>
-                                <li><button onClick>Traductor</button></li>
+                                <li>
+                                    <button onClick={readContent}>
+                                        Lector de Texto
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={() => { /* Acción del traductor */ }}>Traductor</button>
+                                </li>
                             </ul>
                         </div>
                     )}

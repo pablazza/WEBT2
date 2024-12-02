@@ -8,10 +8,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     width: 250px;
+    background-color: #f8f9fa; /* Fondo del menú */
+    color: #011627; /* Color del texto del menú */
 }
 
 .menu-toggle {
-    background-color: #007bff;
+    background-color: #007bff; /* Color del botón */
     color: white;
     border: none;
     padding: 10px;
@@ -37,21 +39,28 @@
 }
 
 .menu-items button, .menu-items a {
-    background-color: #f8f9fa;
-    border: 1px solid #007bff;
+    background-color: #f8f9fa; /* Fondo de los botones */
+    border: 1px solid #007bff; /* Borde de los botones */
     border-radius: 5px;
     padding: 10px;
     text-align: left;
     cursor: pointer;
     width: 100%;
+    color: #007bff; /* Color del texto de los botones */
 }
 
 .menu-items a {
     text-decoration: none;
-    color: #007bff;
 }
 
-.high-contrast {
-    background-color: black;
-    color: white;
+.high-contrast .menu-accesibilidad {
+    background-color: #007bff; /* Fondo del menú en alto contraste */
+    color: white; /* Color del texto en alto contraste */
+}
+
+.high-contrast .menu-items button,
+.high-contrast .menu-items a {
+    background-color: black; /* Fondo de los botones en alto contraste */
+    color: white; /* Color del texto de los botones en alto contraste */
+    border: 1px solid white; /* Borde de los botones en alto contraste */
 }

@@ -1,79 +1,60 @@
 .contact-container {
-    max-width: 800px;
-    margin: 20px auto; /* Añadir un margen superior para separación */
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Fondo claro para mayor contraste */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #fdfffc; /* Off White */
+    color: #011627; /* Dark Blue */
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
-.contact-title {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #333; /* Color del texto más oscuro */
+.contact-container h1 {
+    font-size: 2.5em;
 }
 
 .contact-info {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px; /* Reduce el espacio entre elementos */
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #333; /* Fondo oscuro para el área de contacto */
-    color: white; /* Texto blanco */
-}
-
-.contact-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #007BFF; /* Borde azul */
-    overflow: hidden;
-    flex-shrink: 0;
+    margin-top: 20px;
 }
 
 .contact-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
 }
 
-.contact-data {
-    flex-grow: 1;
-}
-
-.contact-name {
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: inherit; /* Aumentar tamaño de fuente */
-}
-
-.contact-phone,
-.contact-mail {
-    color: #ccc; /* Color más claro para el texto secundario */
-    font-weight: normal; /* Cambiar a normal para diferenciación */
-    font-size: inherit;
-    text-align: left;
-    margin: 4px 0; /* Espaciado entre líneas */
-}
-
-.social-links {
-    display: flex;
-    gap: 15px; /* Espacio entre los iconos */
-    margin-top: 10px; /* Espacio superior para separación */
+.contact-data h2 {
+    color: #2ec4b6; /* Teal */
 }
 
 .social-links a {
-    color: white; /* Color de los iconos */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s; /* Transición suave para hover */
+    margin-right: 10px;
+    color: #e71d36; /* Red */
+    text-decoration: none;
 }
 
 .social-links a:hover {
-    color: #007BFF; /* Cambiar color al pasar el mouse */
+    color: #ff9f1c; /* Orange */
+}
+
+/* Estilos para alto contraste */
+.high-contrast {
+    background-color: #011627; /* Dark Blue */
+    color: #fdfffc; /* Off White */
+}
+
+.high-contrast h1, 
+.high-contrast h2 {
+    color: #fdfffc; /* Off White */
+}
+
+.high-contrast img {
+    border: 2px solid #2ec4b6; /* Teal border */
+}
+
+.high-contrast .social-links a {
+    color: #fdfffc; /* Off White */
+}
+
+.high-contrast .social-links a:hover {
+    color: #ff9f1c; /* Orange */
 }

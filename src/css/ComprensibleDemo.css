@@ -1,62 +1,81 @@
 .Comprensible {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-  }
-  
-  .Comprensible h2 {
-    color: #333;
-  }
-  
-  .Comprensible p {
-    line-height: 1.5;
-    color: #555;
-  }
-  
-  .Comprensible ul {
-    margin-top: 1rem;
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .form-demo {
-    margin-top: 1rem;
-  }
-  
-  .form-demo label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
-  }
-  
-  .form-demo input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-  }
-  
-  .form-demo button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .form-demo button:hover {
-    background-color: #0056b3;
-  }
-  
-  .error-message {
-    color: red;
-    margin-top: 0.5rem;
-  }
-  
-  .success-message {
-    color: green;
-    margin-top: 0.5rem;
-  }
+  background-color: #fdfffc; /* Blanco */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.Comprensible h2 {
+  color: #011627; /* Azul oscuro */
+}
+
+.Comprensible p {
+  line-height: 1.5;
+  color: #2ec4b6; /* Turquesa */
+}
+
+.Comprensible ul {
+  margin-top: 1rem;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.form-demo {
+  margin-top: 1rem;
+}
+
+.form-demo label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  color: #011627; /* Azul oscuro */
+}
+
+.form-demo input {
+  padding: 0.5rem;
+  border: 1px solid #2ec4b6; /* Turquesa */
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-demo button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff9f1c; /* Naranja */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-demo button:hover {
+  background-color: #e71d36; /* Rojo */
+}
+
+.error-message {
+  color: #e71d36; /* Rojo */
+  margin-top: 0.5rem;
+}
+
+.success-message {
+  color: #2ec4b6; /* Turquesa */
+  margin-top: 0.5rem;
+}
+
+/* Estilos para alto contraste */
+.high-contrast {
+  background-color: #011627; /* Azul oscuro */
+  color: #fdfffc; /* Blanco */
+}
+
+.high-contrast label, 
+.high-contrast input, 
+.high-contrast button, 
+.high-contrast .error-message, 
+.high-contrast .success-message {
+  color: #fdfffc; /* Blanco */
+}
+
+.high-contrast input {
+  border: 1px solid #fdfffc; /* Blanco */
+}
